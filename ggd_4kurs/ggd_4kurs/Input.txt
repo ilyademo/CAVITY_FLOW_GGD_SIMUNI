@@ -1,0 +1,13 @@
+1	! L     * Domain and numerical parameters
+0.1	! H
+51	! NI
+21	! NJ
+1.0e-5	! EPS
+5000	! SMAX
+
+10.0	! U0       * Physical parameters
+1.4     ! gamma
+11	! R0
+2000    ! P
+0.01	! NU
+2	! 1 - incompressible	2 - compressible

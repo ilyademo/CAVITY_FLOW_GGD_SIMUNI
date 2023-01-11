@@ -20,7 +20,7 @@
     real:: NU, dy, U0
     real:: RHO(NI), U_n(NI,NJ), C_f(NI, NJ)
     do i = 1, NI
-    C_f(i, :) = NU*RHO(i)*(-U_n(i,NJ) + 4*U_n(i,NJ-1) - U_n(i, NJ-2))/(2*dy)/(0.5*RHO(i)*U0**2)    
+    C_f(i, :) = abs(NU*RHO(i)*(3*U_n(i,NJ) - 4*U_n(i,NJ-1) + U_n(i, NJ-2))/(2*dy)/(0.5*RHO(i)*U0**2))   
     end do
     end subroutine 
     
